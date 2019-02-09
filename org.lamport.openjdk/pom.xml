@@ -61,25 +61,21 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
+					<groupId>com.googlecode.maven-download-plugin</groupId>
+					<artifactId>download-maven-plugin</artifactId>
+					<version>${maven-download-version}</version>
 				<executions>
 					<execution>
-						<id>Downloading JVM package: ${download.file}${download.filePostfix}</id>
 						<phase>process-resources</phase>
 						<goals>
-							<goal>exec</goal>
+								<goal>wget</goal>
 						</goals>
 						<configuration>
-							<executable>curl</executable>
-							<arguments>
-								<argument>-L</argument>
-								<argument>-#</argument>
-								<argument>--create-dirs</argument>
-								<argument>--output</argument>
-								<argument>${project.build.directory}/${download.file}${download.filePostfix}</argument>
-								<argument>${download.url}${download.file}${download.filePostfix}</argument>
-							</arguments>
+								<url>${download.url}${download.file}${download.filePostfix}</url>
+								<!-- We keep do not unpack with this plugin as we need do more than just unpack, so we might as well
+										keep all of that logic in the same configuration below. -->
+								<outputDirectory>${project.build.directory}</outputDirectory>
+								<outputFileName>${download.file}${download.filePostfix}</outputFileName>
 						</configuration>
 					</execution>
 				</executions>
