@@ -10,7 +10,7 @@
    </description>
 
    <url>
-      <update label="OpenJDK JVM update site" url="http://theori.st/eclipse/openjdk/4.9"/>
+      <update label="OpenJDK JVM update site" url="http://lemmy.github.com/eclipse-jdk-bundles/"/>
    </url>
 
    <plugin
