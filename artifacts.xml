@@ -4,7 +4,7 @@
   <properties size='3'>
     <property name='publishPackFilesAsSiblings' value='true'/>
     <property name='p2.compressed' value='true'/>
-    <property name='p2.timestamp' value='1549904507260'/>
+    <property name='p2.timestamp' value='1549994092716'/>
   </properties>
   <mappings size='5'>
     <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
@@ -22,45 +22,45 @@
         <property name='maven-artifactId' value='org.lamport.openjdk.feature'/>
         <property name='maven-version' value='11.0.2.9'/>
         <property name='download.contentType' value='application/zip'/>
-        <property name='download.md5' value='eed2255a08e9a357c1a4668885e91e4b'/>
-        <property name='download.checksum.md5' value='eed2255a08e9a357c1a4668885e91e4b'/>
-        <property name='download.checksum.sha-256' value='932250ea5787a7b2d108aad5f20d1f17670470a6b0059ada0268512e4729e672'/>
+        <property name='download.md5' value='e8334bd971f4589815c0372f66736af3'/>
+        <property name='download.checksum.md5' value='e8334bd971f4589815c0372f66736af3'/>
+        <property name='download.checksum.sha-256' value='8113d7c95bcb0065c3ae278bc763c4f1d5394ffc0331fd15c2bd835049ac0de0'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.lamport.openjdk.macosx.x86_64' version='11.0.2.9'>
       <properties size='8'>
-        <property name='artifact.size' value='38008024'/>
-        <property name='download.size' value='38008024'/>
+        <property name='artifact.size' value='38008025'/>
+        <property name='download.size' value='38008025'/>
         <property name='maven-groupId' value='org.lamport.openjdk'/>
         <property name='maven-artifactId' value='org.lamport.openjdk.macosx.x86_64'/>
         <property name='maven-version' value='11.0.2.9'/>
-        <property name='download.md5' value='dd1ed446a3158d2df482dbcc33928397'/>
-        <property name='download.checksum.md5' value='dd1ed446a3158d2df482dbcc33928397'/>
-        <property name='download.checksum.sha-256' value='89b82952ff18f8a8d4dfc92830712c30baeb35125668d3837efc5a56177316c2'/>
+        <property name='download.md5' value='dc7910e77ae89731e9518954bd6cf6ad'/>
+        <property name='download.checksum.md5' value='dc7910e77ae89731e9518954bd6cf6ad'/>
+        <property name='download.checksum.sha-256' value='9f86427d798ff4eea9da0af095d08248652f7e71a7baf5cc8b856551728d617c'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.lamport.openjdk.linux.x86_64' version='11.0.2.9'>
       <properties size='8'>
-        <property name='artifact.size' value='41720358'/>
-        <property name='download.size' value='41720358'/>
+        <property name='artifact.size' value='41720359'/>
+        <property name='download.size' value='41720359'/>
         <property name='maven-groupId' value='org.lamport.openjdk'/>
         <property name='maven-artifactId' value='org.lamport.openjdk.linux.x86_64'/>
         <property name='maven-version' value='11.0.2.9'/>
-        <property name='download.md5' value='82ac79a051437aab718013812d637637'/>
-        <property name='download.checksum.md5' value='82ac79a051437aab718013812d637637'/>
-        <property name='download.checksum.sha-256' value='c81774ca9a586cbebc4d704c7c618a6281a9e97920292e8e933fe80faa91d9cb'/>
+        <property name='download.md5' value='c48938aeb0cfff8d6d0eb6cf0bad7ea9'/>
+        <property name='download.checksum.md5' value='c48938aeb0cfff8d6d0eb6cf0bad7ea9'/>
+        <property name='download.checksum.sha-256' value='b5e2e6b4df6f9ff1a956b671c7d6b57926b8a1a01145b2246f3f46ab09d61e57'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.lamport.openjdk.win32.x86_64' version='11.0.2.9'>
       <properties size='8'>
-        <property name='artifact.size' value='38339307'/>
-        <property name='download.size' value='38339307'/>
+        <property name='artifact.size' value='38339309'/>
+        <property name='download.size' value='38339309'/>
         <property name='maven-groupId' value='org.lamport.openjdk'/>
         <property name='maven-artifactId' value='org.lamport.openjdk.win32.x86_64'/>
         <property name='maven-version' value='11.0.2.9'/>
-        <property name='download.md5' value='26ea30643bdd268e993fdfca666c44e8'/>
-        <property name='download.checksum.md5' value='26ea30643bdd268e993fdfca666c44e8'/>
-        <property name='download.checksum.sha-256' value='7be0e56ab289f57c35032ac97e78f5b50cdf94fb4ac93f01b33f98f84bbdb044'/>
+        <property name='download.md5' value='deafadc65e0ea6984115726657d1d52b'/>
+        <property name='download.checksum.md5' value='deafadc65e0ea6984115726657d1d52b'/>
+        <property name='download.checksum.sha-256' value='ab567b62d6bf309861b692607f9d2ae56e6be75ece133a2c2d0f677bd1cbb245'/>
       </properties>
     </artifact>
   </artifacts>

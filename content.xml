@@ -2,7 +2,7 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='org.lamport.openjdk.p2repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1549904506520'/>
+    <property name='p2.timestamp' value='1549994091968'/>
     <property name='p2.compressed' value='true'/>
   </properties>
   <units size='10'>
@@ -120,7 +120,7 @@
       <touchpointData size='1'>
         <instructions size='4'>
           <instruction key='configure'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.win32.x86_64_11.0.2.9/jre/bin/java.exe);
+            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.win32.x86_64_11.0.2.9/jre/bin/javaw.exe);
           </instruction>
           <instruction key='unconfigure'>
             org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
