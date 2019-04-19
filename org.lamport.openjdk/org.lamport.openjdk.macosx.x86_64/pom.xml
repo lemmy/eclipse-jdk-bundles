@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.lamport.openjdk</groupId>
 		<artifactId>org.lamport.openjdk</artifactId>
-		<version>11.0.2.9</version>
+		<version>11.0.3.1</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -22,7 +22,7 @@
 
 			AdoptOpenJDK:
  -->		
-		<download.filePostfix>mac_hotspot_11.0.2_9.tar.gz</download.filePostfix>
+		<download.filePostfix>mac_hotspot_11.0.3_7.tar.gz</download.filePostfix>
 		<download.unzippedFolderPostfix>/Contents/Home</download.unzippedFolderPostfix>
 		<download.additionalContent>Contents/MacOS</download.additionalContent>
 		<jre.folder>Contents/Home</jre.folder>
