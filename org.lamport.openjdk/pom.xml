@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.lamport.openjdk</groupId>
 		<artifactId>jdk</artifactId>
-		<version>11.0.3.1</version>
+		<version>12.0.1.1</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -18,20 +18,20 @@
 	<properties>
 	<!-- to test locally, place files in a local directory
  		<download.url>https://download.java.net/java/GA/jdk11/9/GPL/</download.url>
- 		<download.url>https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.3%2B9/</download.url>
+ 		<download.url>https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-12.0.1%2B9/</download.url>
 		<download.url>file:///Users/loki/Downloads/openjdk/</download.url>
 		<download.url>file:///Users/loki/Downloads/adopt_openjdk/</download.url>
 	-->
- 		<download.url>https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.3%2B7/</download.url>
+ 		<download.url>https://github.com/AdoptOpenJDK/openjdk12-binaries/releases/download/jdk-12%2B33/</download.url>
 
 <!--		OpenJDK:
- 		<download.file>openjdk-11.0.3_</download.file>
-		<download.unzippedFolder>jdk-11.0.3</download.unzippedFolder>
+ 		<download.file>openjdk-12.0.1_</download.file>
+		<download.unzippedFolder>jdk-12.0.1</download.unzippedFolder>
 
 			AdoptOpenJDK:
  -->
-		<download.file>OpenJDK11U-jre_x64_</download.file>
-		<download.unzippedFolder>jdk-11.0.3+7-jre</download.unzippedFolder>
+		<download.file>OpenJDK12U-jre_x64_</download.file>
+		<download.unzippedFolder>jdk-12+33-jre</download.unzippedFolder>
 
 		<!-- sub-pom MUST override this -->
 		<download.filePostfix>os_arch.zip</download.filePostfix>
