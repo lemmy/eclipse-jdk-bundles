@@ -2,23 +2,23 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='org.lamport.openjdk.p2repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1555644544392'/>
+    <property name='p2.timestamp' value='1573346977992'/>
     <property name='p2.compressed' value='true'/>
   </properties>
   <units size='10'>
-    <unit id='org.lamport.openjdk.win32.x86_64' version='11.0.3.1'>
-      <update id='org.lamport.openjdk.win32.x86_64' range='[0.0.0,11.0.3.1)' severity='0'/>
+    <unit id='org.lamport.openjdk.win32.x86_64' version='13.0.1.2'>
+      <update id='org.lamport.openjdk.win32.x86_64' range='[0.0.0,13.0.1.2)' severity='0'/>
       <properties size='5'>
         <property name='org.eclipse.equinox.p2.name' value='OpenJDK Windows x86_64 JVM'/>
         <property name='org.eclipse.equinox.p2.provider' value='Microsoft Research, Oracle, loki der quaeler'/>
         <property name='maven-groupId' value='org.lamport.openjdk'/>
         <property name='maven-artifactId' value='org.lamport.openjdk.win32.x86_64'/>
-        <property name='maven-version' value='11.0.3.1'/>
+        <property name='maven-version' value='13.0.1.2'/>
       </properties>
       <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.win32.x86_64' version='11.0.3.1'/>
-        <provided namespace='osgi.bundle' name='org.lamport.openjdk.win32.x86_64' version='11.0.3.1'/>
-        <provided namespace='osgi.identity' name='org.lamport.openjdk.win32.x86_64' version='11.0.3.1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.win32.x86_64' version='13.0.1.2'/>
+        <provided namespace='osgi.bundle' name='org.lamport.openjdk.win32.x86_64' version='13.0.1.2'/>
+        <provided namespace='osgi.identity' name='org.lamport.openjdk.win32.x86_64' version='13.0.1.2'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
@@ -29,13 +29,13 @@
         (&amp;(osgi.arch=x86_64)(osgi.os=win32))
       </filter>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.lamport.openjdk.win32.x86_64' version='11.0.3.1'/>
+        <artifact classifier='osgi.bundle' id='org.lamport.openjdk.win32.x86_64' version='13.0.1.2'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='4'>
           <instruction key='configure'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.win32.x86_64_11.0.3.1/jre/bin/javaw.exe);
+            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.win32.x86_64_13.0.1.2/jre/bin/javaw.exe);
           </instruction>
           <instruction key='unconfigure'>
             org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
@@ -44,77 +44,45 @@
             true
           </instruction>
           <instruction key='manifest'>
-            Bundle-SymbolicName: org.lamport.openjdk.win32.x86_64;singleton:=true&#xA;Bundle-Version: 11.0.3.1
+            Bundle-SymbolicName: org.lamport.openjdk.win32.x86_64;singleton:=true&#xA;Bundle-Version: 13.0.1.2
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.lamport.openjdk.macosx.x86_64' version='11.0.3.1'>
-      <update id='org.lamport.openjdk.macosx.x86_64' range='[0.0.0,11.0.3.1)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='OpenJDK macOS x86_64 JVM'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Microsoft Research, Oracle, loki der quaeler'/>
-        <property name='maven-groupId' value='org.lamport.openjdk'/>
-        <property name='maven-artifactId' value='org.lamport.openjdk.macosx.x86_64'/>
-        <property name='maven-version' value='11.0.3.1'/>
+    <unit id='2.Default' version='1.0.0.7P-1cLgAnh77'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Uncategorized'/>
+        <property name='org.eclipse.equinox.p2.description' value='Default category for otherwise uncategorized features'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
-      <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.macosx.x86_64' version='11.0.3.1'/>
-        <provided namespace='osgi.bundle' name='org.lamport.openjdk.macosx.x86_64' version='11.0.3.1'/>
-        <provided namespace='osgi.identity' name='org.lamport.openjdk.macosx.x86_64' version='11.0.3.1'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='2.Default' version='1.0.0.7P-1cLgAnh77'/>
       </provides>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx))
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.lamport.openjdk.macosx.x86_64' version='11.0.3.1'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='5'>
-          <instruction key='configure'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:../Eclipse/plugins/org.lamport.openjdk.macosx.x86_64_11.0.3.1/Contents/Home/bin/java);
-          </instruction>
-          <instruction key='unconfigure'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
-          </instruction>
-          <instruction key='zipped'>
-            true
-          </instruction>
-          <instruction key='install'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:Contents/Home/bin,permissions:755,options:-R);org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:Contents/Home/lib/jspawnhelper,permissions:755);org.eclipse.equinox.p2.touchpoint.eclipse.ln(targetDir:@artifact,linkName:Contents/MacOS/libjli.dylib,linkTarget:../Home/lib/jli/libjli.dylib,force:true);
-          </instruction>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.lamport.openjdk.macosx.x86_64;singleton:=true&#xA;Bundle-Version: 11.0.3.1
-          </instruction>
-        </instructions>
-      </touchpointData>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.group' range='[13.0.1.2,13.0.1.2]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
     </unit>
-    <unit id='org.lamport.openjdk.feature.feature.jar' version='11.0.3.1'>
+    <unit id='org.lamport.openjdk.feature.feature.jar' version='13.0.1.2'>
       <properties size='7'>
         <property name='org.eclipse.equinox.p2.name' value='OpenJDK JVM'/>
         <property name='org.eclipse.equinox.p2.description' value='OpenJDK JVM provides a platform specific (Linux, Mac, Windows for x86_64) feature and p2 touchpoint instruction for installing a JVM into the underlying RCP.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://theori.st/eclipse/openjdk/4.9'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://lemmy.github.com/eclipse-jdk-bundles/'/>
         <property name='org.eclipse.equinox.p2.provider' value='Microsoft Research, Oracle, loki der quaeler'/>
         <property name='maven-groupId' value='org.lamport.openjdk'/>
         <property name='maven-artifactId' value='org.lamport.openjdk.feature'/>
-        <property name='maven-version' value='11.0.3.1'/>
+        <property name='maven-version' value='13.0.1.2'/>
       </properties>
       <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.jar' version='11.0.3.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.jar' version='13.0.1.2'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='org.lamport.openjdk.feature' version='11.0.3.1'/>
+        <provided namespace='org.eclipse.update.feature' name='org.lamport.openjdk.feature' version='13.0.1.2'/>
       </provides>
       <filter>
         (org.eclipse.update.install.features=true)
       </filter>
       <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='org.lamport.openjdk.feature' version='11.0.3.1'/>
+        <artifact classifier='org.eclipse.update.feature' id='org.lamport.openjdk.feature' version='13.0.1.2'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -125,38 +93,130 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.lamport.openjdk.feature.feature.group' version='11.0.3.1' singleton='false'>
-      <update id='org.lamport.openjdk.feature.feature.group' range='[0.0.0,11.0.3.1)' severity='0'/>
+    <unit id='org.lamport.openjdk.macosx.x86_64' version='13.0.1.2'>
+      <update id='org.lamport.openjdk.macosx.x86_64' range='[0.0.0,13.0.1.2)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='OpenJDK macOS x86_64 JVM'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Microsoft Research, Oracle, loki der quaeler'/>
+        <property name='maven-groupId' value='org.lamport.openjdk'/>
+        <property name='maven-artifactId' value='org.lamport.openjdk.macosx.x86_64'/>
+        <property name='maven-version' value='13.0.1.2'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.macosx.x86_64' version='13.0.1.2'/>
+        <provided namespace='osgi.bundle' name='org.lamport.openjdk.macosx.x86_64' version='13.0.1.2'/>
+        <provided namespace='osgi.identity' name='org.lamport.openjdk.macosx.x86_64' version='13.0.1.2'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=macosx))
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.lamport.openjdk.macosx.x86_64' version='13.0.1.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='5'>
+          <instruction key='configure'>
+            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:../Eclipse/plugins/org.lamport.openjdk.macosx.x86_64_13.0.1.2/Contents/Home/bin/java);
+          </instruction>
+          <instruction key='unconfigure'>
+            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+          <instruction key='install'>
+            org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:Contents/Home/bin,permissions:755,options:-R);org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:Contents/Home/lib/jspawnhelper,permissions:755);org.eclipse.equinox.p2.touchpoint.eclipse.ln(targetDir:@artifact,linkName:Contents/MacOS/libjli.dylib,linkTarget:../Home/lib/libjli.dylib,force:true);
+          </instruction>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.lamport.openjdk.macosx.x86_64;singleton:=true&#xA;Bundle-Version: 13.0.1.2
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.lamport.openjdk.linux.x86_64' version='13.0.1.2'>
+      <update id='org.lamport.openjdk.linux.x86_64' range='[0.0.0,13.0.1.2)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='OpenJDK Linux x86_64 JVM'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Microsoft Research, Oracle, loki der quaeler'/>
+        <property name='maven-groupId' value='org.lamport.openjdk'/>
+        <property name='maven-artifactId' value='org.lamport.openjdk.linux.x86_64'/>
+        <property name='maven-version' value='13.0.1.2'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.linux.x86_64' version='13.0.1.2'/>
+        <provided namespace='osgi.bundle' name='org.lamport.openjdk.linux.x86_64' version='13.0.1.2'/>
+        <provided namespace='osgi.identity' name='org.lamport.openjdk.linux.x86_64' version='13.0.1.2'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=linux))
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.lamport.openjdk.linux.x86_64' version='13.0.1.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='5'>
+          <instruction key='configure'>
+            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.linux.x86_64_13.0.1.2/jre/bin/java);
+          </instruction>
+          <instruction key='unconfigure'>
+            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+          <instruction key='install'>
+            org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/bin,permissions:755,options:-R);org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/lib/jexec,permissions:755);
+          </instruction>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.lamport.openjdk.linux.x86_64;singleton:=true&#xA;Bundle-Version: 13.0.1.2
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.lamport.openjdk.feature.feature.group' version='13.0.1.2' singleton='false'>
+      <update id='org.lamport.openjdk.feature.feature.group' range='[0.0.0,13.0.1.2)' severity='0'/>
       <properties size='8'>
         <property name='org.eclipse.equinox.p2.name' value='OpenJDK JVM'/>
         <property name='org.eclipse.equinox.p2.description' value='OpenJDK JVM provides a platform specific (Linux, Mac, Windows for x86_64) feature and p2 touchpoint instruction for installing a JVM into the underlying RCP.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://theori.st/eclipse/openjdk/4.9'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://lemmy.github.com/eclipse-jdk-bundles/'/>
         <property name='org.eclipse.equinox.p2.provider' value='Microsoft Research, Oracle, loki der quaeler'/>
         <property name='org.eclipse.equinox.p2.type.group' value='true'/>
         <property name='maven-groupId' value='org.lamport.openjdk'/>
         <property name='maven-artifactId' value='org.lamport.openjdk.feature'/>
-        <property name='maven-version' value='11.0.3.1'/>
+        <property name='maven-version' value='13.0.1.2'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.group' version='11.0.3.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.group' version='13.0.1.2'/>
       </provides>
       <requires size='4'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.linux.x86_64' range='[11.0.3.1,11.0.3.1]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.linux.x86_64' range='[13.0.1.2,13.0.1.2]'>
           <filter>
             (&amp;(osgi.arch=x86_64)(osgi.os=linux))
           </filter>
         </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.macosx.x86_64' range='[11.0.3.1,11.0.3.1]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.macosx.x86_64' range='[13.0.1.2,13.0.1.2]'>
           <filter>
             (&amp;(osgi.arch=x86_64)(osgi.os=macosx))
           </filter>
         </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.win32.x86_64' range='[11.0.3.1,11.0.3.1]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.win32.x86_64' range='[13.0.1.2,13.0.1.2]'>
           <filter>
             (&amp;(osgi.arch=x86_64)(osgi.os=win32))
           </filter>
         </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.jar' range='[11.0.3.1,11.0.3.1]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.jar' range='[13.0.1.2,13.0.1.2]'>
           <filter>
             (org.eclipse.update.install.features=true)
           </filter>
@@ -631,52 +691,6 @@
       </provides>
       <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
     </unit>
-    <unit id='org.lamport.openjdk.linux.x86_64' version='11.0.3.1'>
-      <update id='org.lamport.openjdk.linux.x86_64' range='[0.0.0,11.0.3.1)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='OpenJDK Linux x86_64 JVM'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Microsoft Research, Oracle, loki der quaeler'/>
-        <property name='maven-groupId' value='org.lamport.openjdk'/>
-        <property name='maven-artifactId' value='org.lamport.openjdk.linux.x86_64'/>
-        <property name='maven-version' value='11.0.3.1'/>
-      </properties>
-      <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.linux.x86_64' version='11.0.3.1'/>
-        <provided namespace='osgi.bundle' name='org.lamport.openjdk.linux.x86_64' version='11.0.3.1'/>
-        <provided namespace='osgi.identity' name='org.lamport.openjdk.linux.x86_64' version='11.0.3.1'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=linux))
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.lamport.openjdk.linux.x86_64' version='11.0.3.1'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='5'>
-          <instruction key='configure'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.linux.x86_64_11.0.3.1/jre/bin/java);
-          </instruction>
-          <instruction key='unconfigure'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
-          </instruction>
-          <instruction key='zipped'>
-            true
-          </instruction>
-          <instruction key='install'>
-            org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/bin,permissions:755,options:-R);org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/lib/jexec,permissions:755);
-          </instruction>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.lamport.openjdk.linux.x86_64;singleton:=true&#xA;Bundle-Version: 11.0.3.1
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='config.a.jre.javase' version='10.0.0' singleton='false'>
       <hostRequirements size='1'>
         <required namespace='org.eclipse.equinox.p2.iu' name='a.jre.javase' range='10.0.0'/>
@@ -720,20 +734,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='1.Default' version='1.0.0.7L-5cLgAnh5'>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.name' value='Uncategorized'/>
-        <property name='org.eclipse.equinox.p2.description' value='Default category for otherwise uncategorized features'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='1.Default' version='1.0.0.7L-5cLgAnh5'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.lamport.openjdk.feature.feature.group' range='[11.0.3.1,11.0.3.1]'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
     </unit>
   </units>
 </repository>
