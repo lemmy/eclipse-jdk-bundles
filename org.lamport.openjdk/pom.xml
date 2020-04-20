@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.lamport.openjdk</groupId>
 		<artifactId>jdk</artifactId>
-		<version>13.0.1.3</version>
+		<version>14.0.1.7</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -21,7 +21,7 @@
 		<download.url>file:///Users/loki/Downloads/openjdk/</download.url>
 		<download.url>file:///Users/loki/Downloads/adopt_openjdk/</download.url>
 	-->
-	<download.url>https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9/</download.url>
+	<download.url>https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/</download.url>
 
 <!--		OpenJDK:
  		<download.file>openjdk-12.0.1_</download.file>
@@ -29,8 +29,8 @@
 
 			AdoptOpenJDK:
  -->
-		<download.file>OpenJDK13U-jre_x64_</download.file>
-		<download.unzippedFolder>jdk-13.0.1+9-jre</download.unzippedFolder>
+		<download.file>OpenJDK14U-jre_x64_</download.file>
+		<download.unzippedFolder>jdk-14.0.1+7-jre</download.unzippedFolder>
 
 		<!-- sub-pom MUST override this -->
 		<download.filePostfix>os_arch.zip</download.filePostfix>
