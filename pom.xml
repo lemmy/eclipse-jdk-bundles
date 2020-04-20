@@ -19,9 +19,27 @@
 	<properties>
 		<tycho-version>1.6.0</tycho-version>
 		<maven-download-version>1.4.1</maven-download-version>
-		<!-- jarsigner 3.0.0 has certchain https://issues.apache.org/jira/browse/MSHARED-654 -->
-		<jarsigner.plugin.version>3.0.0</jarsigner.plugin.version>
-		<jarsigner.skip>true</jarsigner.skip>
+		<jarsigner.plugin.version>1.4</jarsigner.plugin.version>
+
+		<!-- To sign with an actual certificate, run mvn -Pcodesigning clean verify where ~/.m2/settings.xml contains a profile 'codesigning'. -->
+
+        <!-- These properties define a dummy certificate store that is used unless the developer passes overwrites to maven -->
+        <!-- see http://stackoverflow.com/a/3620575 for how such an overwrite would look like. -->
+  	    <keystore.path>${maven.multiModuleProjectDirectory}/keystore</keystore.path>
+	    <keystore.alias>msr</keystore.alias>
+        <keystore.store.password>secret</keystore.store.password>
+        <keystore.key.password>secret</keystore.key.password>
+        <!--
+          Set to the values below if the signature should include a timestamp. You want this for a release build
+          because a timestamp makes sure the signature remains valid after the certificate expired.
+          If you activate RFC3161, make sure the machine running the build has sufficient entropy available. Otherwise
+          expect to see intermittent hangs when the build attempts to sign a jar. On Linux the haveged and rng-tools
+          can help to collect entropy.
+          <tsa.flag>-tsa</tsa.flag>
+          <tsa.server>http://timestamp.comodoca.com</tsa.server>
+		 -->
+        <tsa.flag></tsa.flag>
+        <tsa.server></tsa.server>
 	</properties>
 
 	<modules>
@@ -147,17 +165,19 @@
 						</execution>
 					</executions>
 					<configuration>
-						<skip>${jarsigner.skip}</skip>
-						<certs>true</certs>
-						<verbose>true</verbose>
-						<keystore>NONE</keystore>
-						<storetype>PKCS11</storetype>
-						<providerClass>sun.security.pkcs11.SunPKCS11</providerClass>
-						<storepass>${jarsigner.storepass}</storepass>
-						<alias>continuum contemplator, loki der quaeler</alias>
-						<providerArg>${jarsigner.providerArg}</providerArg>
-						<certchain>${project.basedir}/../../certchain.txt</certchain>
-						<tsa>http://time.certum.pl/</tsa>
+				        <keystore>${keystore.path}</keystore>
+				        <alias>${keystore.alias}</alias>
+				        <storepass>${keystore.store.password}</storepass>
+				        <keypass>${keystore.key.password}</keypass>
+			           	<verbose>false</verbose>
+			           	<arguments>
+			 			  <!-- Embed a current timestamp in the signed content (file). With this timestamp,
+							the signature of the content remains valid *after* the signing certificate
+							expired. -->
+			              <argument>${tsa.flag}</argument>
+			              <argument>${tsa.server}</argument>
+			            </arguments>
+
 					</configuration>
 				</plugin>
 			</plugins>
