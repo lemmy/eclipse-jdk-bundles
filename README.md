@@ -1,3 +1,5 @@
+This repository was previously a dependency of the TLA+ Toolbox.  It has since been superseded by JustJ (see https://github.com/tlaplus/tlaplus/issues/1241).  The repository is retained only to support building older Toolbox versions.
+
 # eclipse-jdk-bundles
 
 &hellip; for producing Eclipse features for wrapping Linux, Mac, and Windows x64 OpenJDK binaries
